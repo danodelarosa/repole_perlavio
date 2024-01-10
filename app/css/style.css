@@ -1,0 +1,44 @@
+:root {
+    --color-uam: #E26D0B;
+    --color-fondo: #FFFFFF;
+    --color-boton: #F4966E;
+    --color-footer: #FCDCCF;
+    --color-shadows: #706E70;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: Cambria;
+}
+#contenedor_inicio{
+    /*Permite tener cajas flexibles dentro*/
+    display: flex;
+    /*Las siguientes 2 líneas se pueden reducir a una sola usando: flex-flow: row wrap;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*alinea el espacio entre cajas hijas*/
+    justify-content: space-between;
+}
+#uam_logo{
+    /* VW/VHLa imagen ocupa el 20% del ancho/alto total del viewport */
+    width: 20vw;
+    margin-left: 5vw;
+}
+#contenedor_inicio_botones{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#contenedor_inicio_botones button {
+    background-color: var(--color-boton);
+    margin-right: 5vw;
+    width: 15vw;
+    border-radius: 15% 0%;
+    padding: .5%;
+    border-color: var(--color-boton);
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: .2vw .2vw .5vw var(--color-shadows);
+
+}
