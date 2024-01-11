@@ -19,10 +19,11 @@ body{
     flex-wrap: wrap;
     /*alinea el espacio entre cajas hijas*/
     justify-content: space-between;
+    height: 15vh;
 }
 #uam_logo{
-    /* VW/VHLa imagen ocupa el 20% del ancho/alto total del viewport */
-    width: 20vw;
+    /* VW/VH La imagen ocupa el 20% del ancho/alto total del viewport */
+    /*width: 20vw;*/
     margin-left: 5vw;
 }
 #contenedor_inicio_botones{
@@ -51,16 +52,24 @@ button:hover {
 #titulo{
     background-color: var(--color-uam);
     width: 100vw;
+    height: 20vh;
     margin-top: 1vw;
     margin-bottom: 1vw;
     padding: .05vw;
     text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
 
 #contenedor_opciones {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     margin-right: 2.5vw;
+    height: 10;
 }
 
 #contenedor_opciones button{
@@ -69,4 +78,67 @@ button:hover {
     width: 2.5vw;
     height: 2.5vw;
     margin-left: 1vw;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 50vh;
+    justify-content: left;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#contenido_izq {
+    width: 49vw;
+}
+
+#contenido_der {
+    width: 49vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenido_der button {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 20%;
+    /*Evita el desbordamiento de las letras*/
+    word-wrap: break-word;
+    font-size: xx-small;
+    /*Configuraciones para hacer girar el cuadrado y se vuelva un rombo*/
+    -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+     /* offset-x | offset-y | blur-radius | color */
+    box-shadow: .2vw .2vw .5vw var(--color-sombra);
+}
+
+.impar {
+    background-color: var(--color-footer);
+    border-color: var(--color-footer);
+}
+
+.par {
+    background-color: var(--color-boton);
+    border-color: var(--color-boton);
+}
+
+footer{
+    background-color: var(--color-footer);
+    width: 100vw;
+    height: 25vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: .05vw;
+    text-align: center;
 }
