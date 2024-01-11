@@ -8,7 +8,7 @@
 
 body{
     background-color: var(--color-fondo);
-    font-family: Cambria;
+    font-family: Arial;
     margin: 0;
 }
 #contenedor_inicio{
@@ -59,4 +59,14 @@ button:hover {
 
 #contenedor_opciones {
     display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5vw;
+}
+
+#contenedor_opciones button{
+    background-color: var(--color-uam);
+    border-color: var(--color-uam);
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 1vw;
 }
