@@ -8,7 +8,7 @@ Proyecto web para la difusión de información contra las violencias
 
 # Como aportar al proyecto
 1. Hacer un fork de este proyecto en tu cuenta
-![fork](img_readme/00_fork.png)
+![fork](app/img/readme/00_fork.png)
 
 1. Abrir una terminal y clonar el fork que se acaba de hacer
     ```bash
@@ -20,7 +20,7 @@ Proyecto web para la difusión de información contra las violencias
      cd /path/del/proyecto
      ```
    - Usando un editor de código como [Visual Studio Code](https://code.visualstudio.com/download)
-     ![opne_folder_vscode](img_readme/01_open_folder_vscode.png)
+     ![opne_folder_vscode](app/img/readme/01_open_folder_vscode.png)
 3. Crear una rama para la feature/tarea a realizar
    ```bash
    git branch feature_de_ejemplo_1
