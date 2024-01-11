@@ -3,12 +3,13 @@
     --color-fondo: #FFFFFF;
     --color-boton: #F4966E;
     --color-footer: #FCDCCF;
-    --color-shadows: #706E70;
+    --color-sombra: #706E70;
 }
 
 body{
     background-color: var(--color-fondo);
     font-family: Cambria;
+    margin: 0;
 }
 #contenedor_inicio{
     /*Permite tener cajas flexibles dentro*/
@@ -39,6 +40,23 @@ body{
     padding: .5%;
     border-color: var(--color-boton);
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: .2vw .2vw .5vw var(--color-shadows);
+    box-shadow: .2vw .2vw .5vw var(--color-sombra);
 
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#titulo{
+    background-color: var(--color-uam);
+    width: 100vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: .05vw;
+    text-align: center;
+}
+
+#contenedor_opciones {
+    display: flex;
 }
