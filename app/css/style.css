@@ -180,6 +180,7 @@ footer{
         width: 18vw;
         height: 18vw;
     }
-
-  
+    footer {
+        height: 7.5vh;
+    }  
   }
