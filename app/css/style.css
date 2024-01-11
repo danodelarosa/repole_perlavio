@@ -91,11 +91,11 @@ button:hover {
     height: 50vh;
     justify-content: left;
     align-items: center;
-    font-size: xx-large;
 }
 
 #contenido_izq {
     width: 49vw;
+    font-size: xx-large;
 }
 
 #contenido_der {
@@ -142,3 +142,44 @@ footer{
     padding: .05vw;
     text-align: center;
 }
+
+/*Desarrollo reponsivo*/
+/* Media query para pantallas con un ancho menor a 700px */
+@media only screen and (max-width: 700px) {
+    #contenedor_inicio {
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    #uam_logo {
+        width: 70vw;
+        margin-left: 0;
+    }
+
+    #contenedor_inicio_botones button{
+        width: 40vw;
+    }
+
+    #titulo {
+        font-size: small;
+    }
+
+    #contenido_izq {
+        width: 100vw;
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contenido_der {
+        width: 100vw;
+    }
+
+    #contenido_der button {
+        width: 18vw;
+        height: 18vw;
+    }
+
+  
+  }
