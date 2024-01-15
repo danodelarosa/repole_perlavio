@@ -13,7 +13,10 @@ body{
     margin: 0;
     color: black;
 }
+/*Se hace override del color de la fuente porque en iOS el sistema operativo lo sobre escribe de color azul
+https://developer.apple.com/forums/thread/690529*/
 button{color: #000;}
+
 #contenedor_inicio{
     /*Permite tener cajas flexibles dentro*/
     display: flex;
