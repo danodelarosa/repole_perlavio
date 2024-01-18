@@ -96,7 +96,6 @@ button:hover {
     margin-bottom: 1vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    height: 50vh;
     justify-content: left;
     align-items: center;
 }
@@ -144,11 +143,12 @@ button:hover {
 footer{
     background-color: var(--color-footer);
     width: 100vw;
-    height: 25vh;
+    height: 5vh;
     margin-top: 1vw;
     margin-bottom: 1vw;
     padding: .05vw;
     text-align: center;
+    align-self: flex-end;
 }
 
 /*Desarrollo reponsivo*/
