@@ -54,9 +54,7 @@ function cargarViolencias(){
             /*Se llena el contenido izquierdo */
             let contenido_izq = document.createElement("div");
             contenido_izq.id = "contenido_izq";
-            contenido_izq.style.padding = "3vw";
             contenido_izq.style.fontSize = "medium";
-            contenido_izq.style.width = "30vw"
 
 
             let titulo = document.createElement("h2");
@@ -73,12 +71,13 @@ function cargarViolencias(){
             let contenido_der = document.createElement("div");
             contenido_der.id = "contenido_der";
             contenido_der.style.flexDirection = "column";
-
+            contenido_der.style.justifyContent = "flex-start";
             
             const leyes = elemento["leyes"];
             leyes.forEach( (ley) => {
                 let detail = document.createElement("details");
                 detail.innerHTML = "<summary>" + ley["titulo"] + "</summary>" + ley["contenido"];
+                detail.style.paddingBottom = "1vh";
                 contenido_der.appendChild(detail);
             });
             contenido.appendChild(contenido_der);
