@@ -71,7 +71,7 @@ function cargarViolencias(){
             let contenido_der = document.createElement("div");
             contenido_der.id = "contenido_der";
             contenido_der.style.flexDirection = "column";
-            contenido_der.style.justifyContent = "flex-start";
+            contenido_der.style.alignItems = "flex-start";
             
             const leyes = elemento["leyes"];
             leyes.forEach( (ley) => {
