@@ -6,10 +6,4 @@ import { violencia } from "../data/Violencia.js";
 
 const violencias = [discapacidad, genero, igualdad, discriminacion, violencia]
 
-function main(){
-    violencias.forEach(element => {
-        console.log(element);
-    });
-}
-
-main();
+export { violencias };

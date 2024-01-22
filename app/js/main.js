@@ -1,6 +1,7 @@
+import { violencias } from "./data.js";
 function cargarInicio(){
     /*Vuelve a cargar la página de inicio*/
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
 }
 
 function cargarQuienesSomos(){
@@ -8,7 +9,7 @@ function cargarQuienesSomos(){
     let sub_titulo = "INFORMACIÓN DEL REPOSITORIO"
     let contenido = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo con"
     document.querySelector("#titulo h1").textContent = titulo;
-    dom_contenido = document.querySelector("#contenido");
+    let dom_contenido = document.querySelector("#contenido");
     dom_contenido.innerHTML = "";
     dom_contenido.style.justifyContent = "center";
     dom_contenido.style.alignItems= "center";
@@ -32,7 +33,8 @@ function cargarQuienesSomos(){
 }
 
 function main(){
-    console.log("Hola mundo");
+    document.querySelector("#boton_inicio").addEventListener("click", cargarInicio);
+    document.querySelector("#boton_quienes_somos").addEventListener("click", cargarQuienesSomos);
 }
 
 main();
