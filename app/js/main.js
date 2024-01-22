@@ -1,10 +1,3 @@
-import { discapacidad } from "../data/Discapacidad.js";
-import { genero } from "../data/Genero.js";
-import { igualdad } from "../data/Igualdad.js";
-import { discriminacion } from "../data/Discriminacion.js";
-import { violencia } from "../data/Violencia.js";
-const violencias = [discapacidad, genero, igualdad, discriminacion, violencia]
-
 function cargarInicio(){
     /*Vuelve a cargar la página de inicio*/
     window.location.href = "index.html";
@@ -39,9 +32,7 @@ function cargarQuienesSomos(){
 }
 
 function main(){
-    violencias.forEach(element => {
-        console.log(element);
-    });
+    console.log("Hola mundo");
 }
 
 main();
