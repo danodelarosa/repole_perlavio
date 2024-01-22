@@ -4,7 +4,12 @@ const plantilla = {
     "leyes":[
         {
             "titulo":"",
-            "contenido":""
+            "contenido":"",
+            "link":"",
+            "reforma":"",
+            "objetivo":"",
+            "capitulos":"",
+
         },
         {
             "titulo":"",
