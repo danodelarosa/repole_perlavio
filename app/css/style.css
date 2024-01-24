@@ -154,6 +154,7 @@ summary {
   
 details[open] {
     padding: 0.5em;
+    max-width: 46vw;
 }
   
 details[open] summary {
@@ -209,6 +210,9 @@ footer{
     #contenido_der button {
         width: 25vw;
         height: 23vw;
+    }
+    details[open] {
+        max-width: 93vw;
     }
     footer {
         height: 7.5vh;

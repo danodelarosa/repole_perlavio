@@ -86,8 +86,7 @@ function cargarViolencias(){
                 <p>${ley["contenido"]}</p>
                 <p><strong>Última Reforma:</strong></p>
                 <p>${ley["reforma"]}</p>
-                <p><strong>Link de consulta:</strong></p>
-                <a href="${ley["link"]}" target="_blank">${ley["link"]}</a></p>
+                <a href="${ley["link"]}" target="_blank"><strong>Link de consulta</strong></a></p>
                 <p><strong>Objetivo:</strong></p>
                 <p>${ley["objetivo"]}</p>
                 <p><strong>Contenido:</strong></p>
