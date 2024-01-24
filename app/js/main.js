@@ -26,7 +26,6 @@ function cargarQuienesSomos(){
     p.textContent = contenido;
     div.appendChild(h2);
     div.appendChild(p);
-    /*append the div to the dom_contenido*/
     dom_contenido.appendChild(div);
     
     
@@ -34,6 +33,7 @@ function cargarQuienesSomos(){
 
 function cargarViolencias(){
     let contenido_der = document.querySelector("#contenido_der");
+    /*Se crea un boton por cada violencia */
     violencias.forEach( (elemento, indice) => {
         let boton = document.createElement("button");
         boton.id = "boton_violencia_" + (indice+1);
@@ -43,6 +43,7 @@ function cargarViolencias(){
             boton.classList.add("impar");
         }
         boton.textContent = elemento["titulo"].toUpperCase();
+        /*Se le agrega un evento que procesa el contenido de cada app/data/violencia.js */
         boton.addEventListener("click", () =>{
             console.log(elemento);
             /*Limpiamos la pantalla */
@@ -51,6 +52,9 @@ function cargarViolencias(){
             contenido.style.justifyContent = "center";
             contenido.style.alignItems= "center";
 
+            /*Se agrega el titulo*/
+            document.querySelector("#titulo h1").textContent = elemento["titulo"].toUpperCase();
+
             /*Se llena el contenido izquierdo */
             let contenido_izq = document.createElement("div");
             contenido_izq.id = "contenido_izq";
@@ -58,7 +62,7 @@ function cargarViolencias(){
 
 
             let titulo = document.createElement("h2");
-            titulo.textContent = elemento["titulo"];
+            titulo.textContent = "PREÁMBULO";
             contenido_izq.appendChild(titulo);
 
             let preambulo = document.createElement("p");
@@ -75,9 +79,20 @@ function cargarViolencias(){
             
             const leyes = elemento["leyes"];
             leyes.forEach( (ley) => {
+                /*Se hace un elemento details para cada ley */
                 let detail = document.createElement("details");
-                detail.innerHTML = "<summary>" + ley["titulo"] + "</summary>" + ley["contenido"];
-                detail.style.paddingBottom = "1vh";
+                detail.innerHTML = `
+                <summary>${ley["titulo"]}</summary>
+                <p>${ley["contenido"]}</p>
+                <p><strong>Última Reforma:</strong></p>
+                <p>${ley["reforma"]}</p>
+                <p><strong>Link de consulta:</strong></p>
+                <a href="${ley["link"]}" target="_blank">${ley["link"]}</a></p>
+                <p><strong>Objetivo:</strong></p>
+                <p>${ley["objetivo"]}</p>
+                <p><strong>Contenido:</strong></p>
+                <p>${ley["capitulos"]}</p>
+                `;
                 contenido_der.appendChild(detail);
             });
             contenido.appendChild(contenido_der);
